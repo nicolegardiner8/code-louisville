@@ -1,0 +1,263 @@
+/*******************BASE STYLES*****************************/
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: #4e3d42;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: #c9d5b5;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+
+/***********************Header*****************************/
+
+.main-h1 {
+    color: #e3dbdb;
+    margin: 15px 0;
+    padding: 30px 0 0 0;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+/*******************Navigation*****************************/
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    margin: auto;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    padding: 10px 7px;
+    color: #e3dbdb;
+    background-color: #656466;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    background-color: #e3dbdb;
+    color: #656466;
+}
+
+/*********************ABOUT ME AND CONTACT*******************/
+
+.about-me,
+.contact {
+    background-color: #e3dbdb;
+    color: #4e3d42; 
+    margin: 0; 
+    padding: 20px;
+}
+
+.secondary-h1,
+.fourth-h1 {
+    text-align: center;
+    color: #4e3d42;
+    margin: 15px 0;
+    padding: 5px 0 0 0;
+    font-size: 2em;
+    line-height: 1em;   
+}
+
+.contact-h2 {
+    color: #4e3d42;
+    text-align: center;
+}
+
+.contact-pic {
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+.gallery {
+    padding: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 25px;
+}
+
+/*********************PORTFOLIO & SKILLS*********************/
+
+.tertiary-h1 {
+    text-align: center;
+    color: #e3dbdb;
+    margin: 15px 0;
+    padding: 5px 0 0 0;
+    font-size: 2em;
+    line-height: 1em;   
+}
+
+.portfolio {
+    color: #c9d5b5;
+    background-color: #4e3d42; 
+    margin: 0; 
+    padding: 20px;
+}
+
+/************************FOOTER*****************************/
+footer {
+    background-color: #4e3d42;
+    text-align: center;
+    color: #e3dbdb;
+    height: 60px;
+    padding-top: 15px;
+}
+
+/**************************LIGHTBOX**************************/
+
+#overlay {
+  background:rgba(0,0,0,0.9);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display: none;
+  text-align: center;
+}
+
+#overlay img {
+	margin-top: 5%; 
+    height: 400px;
+    width: 600px;
+}
+
+#overlay p {
+	color: white;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 50px;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+/**************************Progress Bar********************/
+.progress {
+    height: 20px;
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span {
+  display: block;
+  height: 100%;
+  background-color: darkslategray; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/*******************CLEARFIX********************************/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/********************MEDIA QUERIES**************************/
+
+@media screen and (min-width: 634px) {
+
+    .main-h1, .main-h2 {
+        width: 50%;
+        float: inherit;
+        margin-bottom: -5px;
+    }
+
+    .main-h1 {
+        font-size: 40px;
+    }
+
+    .main-h2 {
+        font-size: 30px;
+    }
+
+    ul.main-nav {
+        float: right;
+        width: 40%;
+        margin-top: -100px;
+    }
+
+    nav li {
+        display: float inline-block;
+    }
+
+    .my-img {
+        float: left;
+        height: 300px;
+        margin-right: 40px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .contact-icons-ul,
+    .images-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+@media screen and (min-width: 1045px) {
+
+    ul.main-nav {
+        float: right;
+        width: 60%;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    
+    nav li {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .column-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .p-1 {
+        padding-right: 15px; 
+    }
+
+}
+
